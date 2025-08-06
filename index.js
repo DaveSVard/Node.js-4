@@ -7,7 +7,6 @@ const swaggerOptions = YAML.load("./docs/swagger.yaml");
 
 const app = express();
 
-// THIS IS ESSENTIAL to parse JSON bodies:
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
